@@ -205,6 +205,10 @@ def main():
     patience, max_patience = 20, 20
     max_score = 0.0
 
+    # Create folder for the dataset (if it does not exist)
+    if not os.path.exists('logs/'+str(dataset_name)+'/'):
+         os.makedirs('logs/'+str(dataset_name)+'/')
+
     for epoch in range(num_epochs):
         total_train = 0.0
         correct_train = 0.0
