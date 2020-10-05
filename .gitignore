@@ -2,3 +2,4 @@
 *.zip
 weights/*
 results/*.csv
+logs/measures*
