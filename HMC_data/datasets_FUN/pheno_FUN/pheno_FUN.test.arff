@@ -1,0 +1,656 @@
+@RELATION 'pheno0.names'
+
+@ATTRIBUTE 2-deoxyglucose                          {w,n,s,r}
+@ATTRIBUTE 6-azauracil                             {w,n,s,r}
+@ATTRIBUTE 8-hydroxyquinoline                      {w,n,s,r}
+@ATTRIBUTE BCIP                                    {w,n,s,r}
+@ATTRIBUTE CsCl                                    {w,n,s,r}
+@ATTRIBUTE DL-p-fluorophenyl-alanine               {w,n,s,r}
+@ATTRIBUTE EGTA                                    {w,n,s,r}
+@ATTRIBUTE FK506                                   {w,n,s,r}
+@ATTRIBUTE LiCl                                    {w,n,s,r}
+@ATTRIBUTE MMS                                     {w,n,s,r}
+@ATTRIBUTE NaF                                     {w,n,s,r}
+@ATTRIBUTE RbCl                                    {w,n,s,r}
+@ATTRIBUTE SD                                      {w,n,s,r}
+@ATTRIBUTE SDS                                     {w,n,s,r}
+@ATTRIBUTE YPD                                     {w,n,s,r}
+@ATTRIBUTE YPG                                     {w,n,s,r}
+@ATTRIBUTE YPGlyc                                  {w,n,s,r}
+@ATTRIBUTE allylglycine                            {w,n,s,r}
+@ATTRIBUTE aminotriazole                           {w,n,s,r}
+@ATTRIBUTE benomyl                                 {w,n,s,r}
+@ATTRIBUTE beta-2-thienyl-DL-alanine               {w,n,s,r}
+@ATTRIBUTE caffeine                                {w,n,s,r}
+@ATTRIBUTE calcium_chloride                        {w,n,s,r}
+@ATTRIBUTE calcofluor_white                        {w,n,s,r}
+@ATTRIBUTE camptothecin                            {w,n,s,r}
+@ATTRIBUTE canavanine                              {w,n,s,r}
+@ATTRIBUTE cobalt_chloride                         {w,n,s,r}
+@ATTRIBUTE cycloheximide                           {w,n,s,r}
+@ATTRIBUTE cyclosporin-a                           {w,n,s,r}
+@ATTRIBUTE d-histidine                             {w,n,s,r}
+@ATTRIBUTE daunomycin                              {w,n,s,r}
+@ATTRIBUTE diamide                                 {w,n,s,r}
+@ATTRIBUTE diazaborine                             {w,n,s,r}
+@ATTRIBUTE ethanol                                 {w,n,s,r}
+@ATTRIBUTE ethanol+glucose                         {w,n,s,r}
+@ATTRIBUTE fenpropimorph                           {w,n,s,r}
+@ATTRIBUTE fluorocytosine                          {w,n,s,r}
+@ATTRIBUTE formaldehyde                            {w,n,s,r}
+@ATTRIBUTE formamide                               {w,n,s,r}
+@ATTRIBUTE h2o2                                    {w,n,s,r}
+@ATTRIBUTE hydroxyurea                             {w,n,s,r}
+@ATTRIBUTE hygromycin_b                            {w,n,s,r}
+@ATTRIBUTE lovostatin                              {w,n,s,r}
+@ATTRIBUTE manganese_chloride                      {w,n,s,r}
+@ATTRIBUTE menadione                               {w,n,s,r}
+@ATTRIBUTE methylamine                             {w,n,s,r}
+@ATTRIBUTE methylene_blue                          {w,n,s,r}
+@ATTRIBUTE mevinolin                               {w,n,s,r}
+@ATTRIBUTE microcystin                             {w,n,s,r}
+@ATTRIBUTE neomycin                                {w,n,s,r}
+@ATTRIBUTE nocodazole                              {w,n,s,r}
+@ATTRIBUTE nystatin                                {w,n,s,r}
+@ATTRIBUTE oligomycin                              {w,n,s,r}
+@ATTRIBUTE papulacandin_b                          {w,n,s,r}
+@ATTRIBUTE paraquat                                {w,n,s,r}
+@ATTRIBUTE paromomycin                             {w,n,s,r}
+@ATTRIBUTE potassium_chloride                      {w,n,s,r}
+@ATTRIBUTE rapamycin                               {w,n,s,r}
+@ATTRIBUTE sodium_chloride                         {w,n,s,r}
+@ATTRIBUTE sorbitol                                {w,n,s,r}
+@ATTRIBUTE staurosporine                           {w,n,s,r}
+@ATTRIBUTE tetraethylammoniumchloride              {w,n,s,r}
+@ATTRIBUTE thiabendazole                           {w,n,s,r}
+@ATTRIBUTE trifluoperazine                         {w,n,s,r}
+@ATTRIBUTE tunicamycin                             {w,n,s,r}
+@ATTRIBUTE vanadate                                {w,n,s,r}
+@ATTRIBUTE verrucarin                              {w,n,s,r}
+@ATTRIBUTE zinc_chloride                           {w,n,s,r}
+@ATTRIBUTE zymolyase                               {w,n,s,r}
+@ATTRIBUTE class                                   hierarchical 01,01/01,01/01/03,01/01/03/01,01/01/03/01/01,01/01/03/01/02,01/01/03/02,01/01/03/02/01,01/01/03/02/02,01/01/03/03,01/01/03/03/02,01/01/03/05,01/01/03/05/01,01/01/03/05/02,01/01/05,01/01/05/01,01/01/05/01/01,01/01/05/01/02,01/01/05/03,01/01/06,01/01/06/01,01/01/06/02,01/01/06/02/01,01/01/06/02/02,01/01/06/04,01/01/06/04/01,01/01/06/04/02,01/01/06/05,01/01/06/05/01,01/01/06/05/01/01,01/01/06/05/01/02,01/01/06/06,01/01/06/06/01,01/01/06/06/01/03,01/01/06/06/02,01/01/09,01/01/09/01,01/01/09/01/01,01/01/09/01/02,01/01/09/02,01/01/09/02/01,01/01/09/03,01/01/09/03/01,01/01/09/04,01/01/09/04/01,01/01/09/05,01/01/09/05/01,01/01/09/06,01/01/09/06/01,01/01/09/07,01/01/09/07/01,01/01/11,01/01/11/01,01/01/11/02,01/01/11/02/01,01/01/11/02/02,01/01/11/03,01/01/11/03/01,01/01/11/03/02,01/01/11/04,01/01/11/04/01,01/01/11/04/02,01/01/13,01/02,01/02/02,01/02/02/09,01/02/02/09/01,01/02/02/09/05,01/02/03,01/02/03/01,01/02/07,01/02/07/01,01/03,01/03/01,01/03/01/03,01/03/04,01/03/04/03,01/03/07,01/03/10,01/03/13,01/03/16,01/03/16/01,01/03/16/03,01/04,01/04/04,01/05,01/05/02,01/05/02/04,01/05/02/07,01/05/03,01/05/03/01,01/05/03/01/04,01/05/03/02,01/05/03/02/04,01/05/03/03,01/05/03/03/04,01/05/05,01/05/05/04,01/05/05/07,01/05/06,01/05/06/07,01/05/09,01/05/09/04,01/05/09/07,01/05/11,01/05/11/04,01/05/13,01/05/13/01,01/05/13/03,01/05/25,01/06,01/06/02,01/06/02/01,01/06/02/02,01/06/05,01/06/06,01/06/06/09,01/06/06/11,01/06/10,01/07,01/07/01,01/07/03,01/07/04,01/07/07,01/20,01/20/01,01/20/01/01,01/20/01/07,01/20/05,01/20/05/09,01/20/15,01/20/15/03,01/20/17,01/20/17/01,01/20/17/03,01/20/17/09,01/20/19,01/20/19/01,01/20/27,01/20/31,01/20/37,01/20/37/01,01/25,01/25/01,02,02/01,02/01/01,02/01/03,02/04,02/07,02/08,02/10,02/11,02/13,02/13/01,02/13/03,02/13/05,02/16,02/16/01,02/16/03,02/16/09,02/16/11,02/16/13,02/19,02/25,02/45,02/45/11,02/45/15,10,10/01,10/01/02,10/01/03,10/01/03/03,10/01/03/05,10/01/05,10/01/05/01,10/01/05/03,10/01/05/03/01,10/01/05/03/03,10/01/05/03/05,10/01/09,10/01/09/03,10/01/09/05,10/01/11,10/03,10/03/01,10/03/01/01,10/03/01/01/01,10/03/01/01/03,10/03/01/01/05,10/03/01/01/09,10/03/01/01/11,10/03/01/02,10/03/01/03,10/03/02,10/03/02/01,10/03/03,10/03/04,10/03/04/01,10/03/04/03,10/03/04/05,10/03/04/07,10/03/04/09,10/03/05,10/03/05/01,10/03/05/03,11,11/02,11/02/01,11/02/02,11/02/03,11/02/03/01,11/02/03/01/01,11/02/03/01/04,11/02/03/01/07,11/02/03/04,11/02/03/04/01,11/02/03/04/03,11/04,11/04/01,11/04/02,11/04/03,11/04/03/01,11/04/03/01/10,11/04/03/03,11/04/03/05,11/04/03/11,11/06,11/06/01,11/06/02,12,12/01,12/01/01,12/04,12/04/01,12/04/02,12/04/03,12/07,12/10,14,14/01,14/04,14/07,14/07/01,14/07/02,14/07/02/01,14/07/02/02,14/07/03,14/07/04,14/07/05,14/07/07,14/07/09,14/07/11,14/07/11/01,14/10,14/13,14/13/01,14/13/01/01,14/13/04,14/13/04/02,16,16/01,16/03,16/03/01,16/03/03,16/06,16/07,16/09,16/11,16/13,16/13/01,16/17,16/17/01,16/17/07,16/17/09,16/19,16/19/01,16/19/03,16/19/05,16/21,16/21/05,16/21/07,16/21/08,16/21/15,16/21/17,18,18/01,18/01/01,18/01/07,18/02,18/02/01,18/02/01/01,18/02/01/01/01,18/02/01/01/03,18/02/01/01/05,18/02/01/02,18/02/01/02/01,18/02/01/02/03,18/02/01/02/05,18/02/03,18/02/05,18/02/09,20,20/01,20/01/01,20/01/01/01,20/01/01/01/01,20/01/01/01/01/01,20/01/01/07,20/01/01/07/05,20/01/01/07/07,20/01/03,20/01/03/01,20/01/03/03,20/01/07,20/01/09,20/01/10,20/01/11,20/01/13,20/01/15,20/01/17,20/01/21,20/01/23,20/01/25,20/01/27,20/03,20/03/01,20/03/01/01,20/03/01/05,20/03/02,20/03/02/03,20/03/02/03/01,20/03/22,20/03/25,20/09,20/09/01,20/09/03,20/09/04,20/09/05,20/09/07,20/09/07/03,20/09/07/05,20/09/07/06,20/09/07/25,20/09/07/27,20/09/07/29,20/09/13,20/09/14,20/09/16,20/09/16/09,20/09/16/09/03,20/09/18,20/09/18/09,20/09/18/09/01,30,30/01,30/01/05,30/01/05/01,30/01/05/01/03,30/01/05/05,30/01/05/05/01,30/01/09,30/01/09/03,30/01/09/07,30/01/09/09,30/01/09/11,30/05,30/05/01,30/05/01/10,30/05/02,30/05/02/24,32,32/01,32/01/01,32/01/03,32/01/04,32/01/05,32/01/06,32/01/07,32/01/09,32/01/11,32/05,32/05/01,32/05/01/01,32/05/01/03,32/05/01/03/03,32/05/05,32/05/05/01,32/07,32/07/01,32/07/03,32/07/05,32/07/07,32/07/07/01,32/07/07/03,32/07/07/05,32/07/07/07,34,34/01,34/01/01,34/01/01/01,34/01/01/03,34/01/03,34/01/03/01,34/01/03/03,34/07,34/11,34/11/03,34/11/03/07,34/11/03/11,34/11/03/13,34/11/09,34/11/11,34/11/12,38,38/07,40,40/01,40/01/03,40/01/03/01,40/01/05,40/01/05/01,40/10,40/10/02,40/10/02/01,40/10/02/02,40/10/02/02/01,40/20,41,41/01,41/01/01,42,42/01,42/04,42/04/03,42/04/05,42/07,42/08,42/09,42/10,42/10/03,42/10/05,42/10/07,42/16,42/19,42/22,42/25,42/29,43,43/01,43/01/03,43/01/03/05,43/01/03/06,43/01/03/09,99
+
+@DATA
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,s,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,01/04@10/03/01/03@10/03/03@11@12@14/07/03@40/01@42/04/03@42/29@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,42/10/03
+n,n,n,s,n,n,s,n,n,s,n,n,n,s,n,n,s,n,n,s,n,s,n,s,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,s,s,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,s,n,s,n,n,n,n,n,n,n,n,01/01/13@01/03/16/01@01/05/25@10/03/01/01/01@11/02/03/04@11/04
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,02/45/11@10/03/03@20/01/21@20/09/14@34/11/03/07@42/07@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/07@20/09/13@20/09/16
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05@01/20/17/01@20/01/03@20/01/13@20/03@20/09/04
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/04@10/03/02@14/07/03@32/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/04/01@11/04/02
+n,n,n,w,n,n,w,n,n,w,n,n,w,w,w,w,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,s,n,n,w,n,n,n,n,n,n,n,n,n,n,11/06/02
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,s,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,11/02/01@11/02/03/01@16/03/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/01/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/03/04/03@01/06/02/01@42/01
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/01/09/05@11/02/03/04@14/07/04@34/11/03/07
+n,n,n,s,n,n,s,n,n,w,n,n,w,s,w,w,w,n,n,w,n,s,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/04
+n,n,n,w,n,n,s,n,n,w,n,n,w,w,w,w,w,n,n,w,n,s,n,w,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,32/01/01@32/07/07
+n,n,n,n,n,n,w,n,n,w,n,n,w,w,w,w,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/07/05@14/13/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,12/01/01
+n,n,n,s,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,s,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/03@10/03/04/05@14/04@16/07@20/01/10@20/01/21@20/09/01@42/10/05
+n,n,n,w,n,n,s,n,n,s,n,n,n,s,n,n,s,n,n,s,n,w,n,s,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,s,w,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,02/11@02/13@02/45/15@20/01/01/01@20/01/15@20/03/22@20/09/04@34/01/01/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,42/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,01/04@10/03/01@14/07/03@30/01/05/01@30/01/09/09@32/01@40/01/03@42/01@42/04/03@43/01/03/05
+n,n,n,w,n,n,s,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/09/05@11/02/03/04@16/03/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/09/05@11/02/03/04@16/03/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,r,n,n,n,01/05@14/07/02@40/01@42/01
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/04
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,02/01/03@14/07/05@14/13/01
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,20/01/07@20/09/18
+n,n,n,n,n,n,n,r,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,20/01/07@20/09/18
+n,n,n,n,n,n,w,n,n,w,n,n,s,w,s,s,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,r,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,42/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,02/13/01@20/01/17@20/03/02/03@20/09/04
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/01/09/05@10/03/02@11/02/03/04@14/07/04@32/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/04/02
+n,n,n,s,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/01/01/01@20/01/15@20/03/22@20/09/13@34/01/01/03
+n,n,n,w,n,n,w,n,n,w,n,n,w,w,w,w,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,34/11/03/07@41/01/01
+n,n,n,w,n,n,w,n,n,w,n,n,w,w,w,w,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/04@16/03/03@20/01/21@34/11/03/07@40/01@42/04@42/07@43/01/03/05
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/03/01/01/09@14/07/09@40/01@42/04@43/01/03/05
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/04
+n,n,n,s,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,s,n,s,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/03/01@10/03/04/05@14/07/03@18/02/01/01/05
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/01/09/04/01@01/01/09/05/01@01/01/09/06/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,02/13@20/01/17@20/03@20/09/04
+n,n,n,s,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/02/07@02/01@02/07
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,14/13/01/01
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/06
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05@14/07/02/01@14/07/02/02@42/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/05/03@01/02/02/09/01@01/03/01@16/19/03@16/21/15
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11@12/07@16/03/01@16/03/03@40/01/03/01@42/16
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/01/01/03@11/02/03/01@11/02/03/04
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,14/04@14/07/11/01@14/13/04@20/09/13@42/25
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05@01/07@02/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/06
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,20/09/07@20/09/18
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/01@20/01/01/07/05@20/09/18@34/01/03/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/11/04/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,r,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/03/01/01/11@10/03/02@10/03/04/07@11/02/03/04@34/11/03/07@41/01/01@42/10
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/04/01@12/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,s,n,n,n,n,r,n,n,n,20/03@30@42/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,r,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,20/03@32/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/10
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,18/02/01@20/01/01/01@20/03/22@34/01/01/03
+n,n,n,s,n,n,w,n,n,w,n,n,n,w,n,n,s,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,02/13@12/01/01@42/16
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/06/06/11@43/01/03/09
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/09/07/03
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,01/04@14/07/03@18/02/01/01/05@30/01/05/01/03@30/05@32/01@34/11/03/13
+n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,s,s,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/01/05/01@10/01/05/03/03@10/03/01/03@32/01/09
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,r,n,n,20/01/13
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,s,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,11/02/03/01@11/02/03/04
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,11/04/01@11/06/01@12/01/01
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,s,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,20/09/16
+n,n,n,n,n,n,w,n,n,w,n,n,w,w,w,w,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@14/07/03@32/01
+n,n,n,w,n,n,w,n,n,w,n,n,w,w,s,s,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/04/02@20/01/07
+n,n,n,n,n,n,w,n,n,w,n,n,s,w,s,s,w,n,n,w,n,s,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/13/04@18/02/01@42/25
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,s,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/01@01/07/01@01/07/07@11/02/03/04/01
+n,n,n,w,n,n,w,n,n,w,n,n,s,s,s,s,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/04/03/01@16/01@16/19/03@20/01/21
+n,n,n,w,n,n,w,n,n,w,n,n,s,s,s,s,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,02/11@02/13/03@02/16/01@20/01/15@42/16
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,11/04/03/01@16/03/03
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/04@16/19/03@32/01/05@32/07@34/11/03@34/11/09
+n,n,n,w,n,n,w,n,n,w,n,n,s,w,s,s,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/07@18/02/01/01/03@32/01/01@32/07@34/01/01/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,14/10@20/09/07/03@20/09/07/05@42/08
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,s,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,11/04/01@12/01@16/03/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/01/01/05@10/03/01/01/09@18/02/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,11/04/03/03@16/01
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,w,r,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/01/03/02/01@01/02
+n,n,n,s,n,n,s,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,02/11@02/45/15@18/02/01/02@20/01/15
+n,n,n,w,n,n,w,n,n,w,n,n,w,s,w,w,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/06/06/01/03@01/05
+n,n,n,w,n,n,w,n,n,w,n,n,w,w,w,w,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/03/02@01/02@02/10
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/03/01@10/03/03@40/01@42/04@43/01/03/05
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,r,n,n,n,01/05/03/02/04@14/07/02/02@16/01
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,18/02/01/01/01@20/09/13@42/25
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,s,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,18/02/01/01/01@30/01/05/05/01@30/05/02/24@42/01@43/01/03/09
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/04/03@14/04
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,s,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/04@30/01/09/07
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,s,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/03/01
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/01/05/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,12/10
+n,n,n,s,n,n,s,n,n,w,n,n,n,s,n,n,w,n,n,w,n,s,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,20/01/01/01@20/03/22@34/01/01
+n,n,n,s,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/02/07@02/01
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/03/02@43/01/03/09
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,20/01/09@20/01/10@20/09/07/03
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,w,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/06
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/07/05@14/10@14/13/01/01@16/01@20/09/13@20/09/18/09/01@32/01/07@34/11/03/07@43/01/03/09
+n,n,n,s,n,n,w,n,n,w,n,n,w,s,w,w,w,n,n,s,n,w,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/01/01@42
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/05/25@10/01/09/05@11/02/03/04@34/11/03/07
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,11/04/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/01/25@20/03/25@20/09/13@32/07@34/11/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/09/05@14/07/05@14/10@14/13/01/01@16/01@16/19/03@34/11/03/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/01/01/01@11/02/03/01@11/02/03/04/01@34/11/03/07
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,r,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,14/01@32/01
+n,n,n,s,n,n,s,n,n,s,n,n,n,s,n,n,w,n,n,s,n,s,n,s,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/13@10/03/01/01/11@10/03/04/07@10/03/05/03@11/02/03/04@14/04@16/01@20/01/10@20/01/21@20/09/01@42/04/03
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,r,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/01/13@11/02/03/04@16/11@34/11/03@34/11/12
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,s,n,w,n,w,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/01@11/02/03/01@16/03/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,32/01@34/01/01@42/04@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/01@16/01@32/01/07@42/04
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,14/01@16/01@32/01/07@42/04
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/01/09/05@11/02/03/04@16/03/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/05/01@10/01/09/05@11/02/03/04@16/01@32/01@34/11/03/07@40/10@40/20@42/10/03
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,99
+n,n,n,s,n,n,s,n,n,w,n,n,n,w,n,n,w,n,n,s,n,w,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/04/03/01@16/03/03
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/01/01/09@10/03/02@42@43/01/03/05@43/01/03/09
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,s,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/07/01@20/09/18/09/01@30/05@34/11/03/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/06@30/01/09/03@32/01/11
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,02/11@02/13@02/45/15@16/07@20/01/01/01@20/01/15@20/03/22@20/09/04@34/01/01/03
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05@14/07
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/01/09/05@10/03/01/01@10/03/01/03@11/02/03/04/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,s,n,n,s,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/01/01@12/04/02
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,14/04@14/07@42/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/01/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@01/05/25@14/07/03@30/01/05
+n,n,n,n,n,n,s,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,99
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/03/01@01/04
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,s,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/01@11/02/03/04@11/04/02
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,01/05@14/07/02/01@14/07/02/02@42/01
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,s,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/04@14/07@14/10@20/09/13
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/01/03@20/01/13@20/09/18
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/03@10/01/05/01@10/03/01/02@10/03/01/03@14/04@14/07/03@16/01@32/01/09@42/10/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,34/01/01/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/03/07@20/01/15@32/01/01@32/07/03@32/07/07/03@32/07/07/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05@43/01/03/09
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/01/03
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/03/02@43/01/03/09
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,14/01@16/01@42/04
+n,n,n,w,n,n,s,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,18/02/03@20/09/07/03@20/09/07/05
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/01/02@10/01/03/03@16/19/03
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,r,n,n,n,01/05@14/07/02/02
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,s,n,s,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/05/01@10/03/01/03@14/13@18/02/01/02/03@32/01/09@42/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,02/11@02/13@20/01/15@32/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,s,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/07@14/13/01@14/13/04/02@32/01/11@43/01/03/09
+n,n,n,s,n,n,w,n,n,s,n,n,n,s,n,n,w,n,n,w,n,s,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,s,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/01/01/11@10/03/05/01@20/09/14
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,30/01/05/05@34/11/03/07@34/11/12@40/01@43/01/03/05@43/01/03/09
+n,n,n,s,n,n,s,n,n,s,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/06/05@01/05/13/01@01/07/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/01/17@20/09
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,12/01/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/13
+n,n,n,w,n,n,s,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/06/05/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/07/11@14/13/01/01
+n,n,n,w,n,n,w,n,n,s,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,s,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/05/01@10/01/05/03/01@10/01/05/03/03@10/03/02@32/01/09@34/11/03/07@41/01/01@42/10/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/07/05@14/13/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/01@14/04@16/01@20/09/05@32/01/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@10/03/01@14/07/03
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/04@01/05/02/04@01/05/02/07@02/01@10/01/03@11@14/07/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,s,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,43/01/03/09
+r,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/04@01/05/25@02/19@10/03/01/03@10/03/02@11/02/03/01/07@11/04/01@12/07@14/07/03@32/01/05@34/11/09@40/01@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,s,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/07/01@02/13@14/10
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,16/01@16/07@30/01/05/05/01@34/11/03/07@42/04/03@43/01/03/05
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,42/01
+n,n,n,s,n,n,s,n,n,w,n,n,n,w,n,n,s,n,n,w,n,s,n,s,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,02/13@14/10@20/01/10@20/09/04
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/03/01@18/02/01/01/01@30/01/05/05/01@42/01@42/04/03@42/04/05@42/29@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/01/10@20/09/07/03@20/09/07/05@20/09/07/29
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,s,n,s,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/04/03/01@16/19/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/07@20/01/15@32/01/01@32/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/02@10/01/05/01@11/04@12/07@42/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,02/01@02/08
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@14/04@42/25
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05@01/06@10/01/05/01@32/01/01@32/01/03@32/01/05@34/07@34/11/03/13@34/11/09
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,s,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/01/09/01/01@01/01/11/01@02/04
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/10@20/09/07/03
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,11/04/03/01
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@10/03/01/01/11@10/03/04/03@16/03/01@16/19/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/02@10/01/05/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/01/01@42/16
+n,n,n,w,n,n,w,n,n,s,n,n,n,s,n,n,w,n,n,s,n,s,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,02/11@20/01/01/01@20/01/15@20/03/22@34/01/01/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/11/04/01
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,s,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/06/06/11
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,s,n,w,r,n,n,r,n,n,n,n,r,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,r,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/04/01@16/03/01@32/05/01/03@32/07
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@10/03/01/01/11@10/03/04/07@14/07/03@32/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,01/05/03/02/04@14/07/02/02
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/05/03/02/04@42/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,r,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/04@10/03/01@14/07/11@14/13/01/01@16/19/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/04/05@10/03/05/01@42/04
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,s,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05@01/07@02/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,s,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/03@01/04@01/07
+n,n,n,n,n,n,s,n,n,w,n,n,n,w,n,n,s,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/04@20/01/01/01/01/01@34/01/01/01
+n,n,n,s,n,n,s,n,n,s,n,n,n,s,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,s,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,42/04/05
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,s,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,14/04@16/07@20/01/10@20/01/21@20/09/01@42/10/05@43/01/03/09
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/04/03/01@16/19/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,r,n,n,w,n,n,n,n,n,n,n,n,n,n,12/01/01@12/07
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/01/09/05@11/02/03/04
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/01/01
+n,n,n,n,n,n,s,n,n,w,n,n,n,w,n,n,w,n,n,s,n,w,n,s,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/09/07/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/09/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/02/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,s,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/03/16/01@10/03/01/01@11/04@14/04@16/03/03@20/01/10@32/01@34/11/03/07@40/20@42/01
+n,n,n,n,n,n,n,n,n,n,n,n,r,n,r,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/01/06/05/01/01@01/02
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,s,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,20/01/17@20/01/25
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,s,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@10/03/01/03@10/03/03@12@14/07/03@32/01@40/01@42/04/03@42/29@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/07/11@14/13/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@11/02/03/04@14/07/03@30/01/05@40/20@43/01/03/05
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/04
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@10/03/01/01/03@14/07/03@30/01/05/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/03/01/03@16/19/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/07
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,s,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/25@11/02/03/04@30/01
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05@02/16/01@16/17/09
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,s,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,02/11@02/13@02/45/15@20/01/15@32/01@42/01
+n,n,n,s,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,s,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/04/03/01@16/03/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/03@02/19@42/01@43/01/03/09
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,s,n,n,w,n,w,n,w,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,02/13@14/10
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/25@18/02/03@18/02/05@30/01/05/05/01@40/01/03@42/01@42/04/03@42/29@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/01/01@42/16
+n,n,n,s,n,n,w,n,n,w,n,n,n,s,n,n,s,n,n,w,n,w,n,s,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/01/01
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,32/01/01@32/07/07/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/04@32/01/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,s,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,02/13/03@16/01@32/01/07
+n,n,n,s,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,s,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/04/05@10/03/05/01@42/04
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/01/01@12/07
+n,n,n,s,n,n,w,n,n,w,n,n,w,w,w,w,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,30/01
+n,n,n,w,n,n,w,n,n,s,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/02/07@01/05/03@02/19@42/01
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/07/01@10/01/05/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/06/02/01@01/20/19
+n,n,n,s,n,n,s,n,n,s,n,n,n,s,n,n,s,n,n,s,n,s,n,s,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,s,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,12/04/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,02/13@14/10
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/04/03/05
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,14/04@20/01/10@20/09/04
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05@01/07/01@02/01@02/08@16/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,s,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/03/16/01@11/04/01@42/01
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,11/02/03/01/04@11/02/03/04
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/04
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01@01/03/01/03@01/05/13/03@01/07/01@02/04@11/06/02@16/21/07
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/06/02/01@14/07/01@30/01@42/01@43/01/03/09
+n,n,n,s,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/01/01@12/04/02@42/16
+n,n,n,n,n,n,n,n,n,n,n,n,r,n,w,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/03/02/01@14/13@43/01/03/09
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,14/04@16/01@18/02/01/01@20/09/03@42/19
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@01/05/02/07@01/05/25@02/01
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/03/01/01/01@12/01@42/04/03
+n,n,n,w,n,n,w,n,n,w,n,n,w,w,w,w,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/01/23@20/01/25
+n,n,n,w,n,n,s,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@14/13/01@16/19/03
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,s,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,38
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,12/01/01@16/03/03@42/16
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/25@10/01/09/05@11/02/03/04@34/11/03/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/04@20/09/07/05@20/09/07/27
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,s,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,20/01/17@20/01/25@20/09/04
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/06/06/11@32/07/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,32/01/01@32/07/07/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/01/27@32/07
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,02/11@02/13/03@20/01/15
+n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,02/19@14/10@16/01@32/01/07@34/01/01/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/07/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/03/16/01@11/04/01
+n,n,n,w,n,n,s,n,n,w,n,n,n,s,n,n,w,n,n,s,n,s,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01@11/06/02@40/01@42/04@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/06/06/11
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@14/07/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@14/07/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/09/05@18/02/01/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/09/05@11/02/03/04@14/07/04@42/10/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/02/07@01/20@32/01/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/07/11@14/13
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@10/03/03@14/07/03@20/09/07@20/09/18/09/01@32/01@34/11/12@40/01@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/09/04@01/01/09/05@01/01/09/06@01/01/13@01/20/17/09
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,40/10/02/02/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/04@16/01@20/09/03@42/19
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/05@02/07@16/21/07
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/04@10/03/01@14/07/03@32/01/01@34/11/12@40/01/05@40/20
+n,n,n,s,n,n,w,n,n,s,n,n,n,s,n,n,w,n,n,s,n,s,n,w,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,s,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/25@11/02/03/04@16/19/01@18/02/01/02/05@30@32/01/05@34/11/09@40/01@42/04@43/01/03/05@43/01/03/09
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04/04@01/05@02/19@18/02/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@01/05@32/01/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/10@16/01@16/07@20/09/14@42/04/03@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/04/02@14/07/11@14/13/01/01@30
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/04@20/09/07/03@20/09/07/25
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/03/02/01@20/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/03@43/01/03/09
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/04@32/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/01/01@20/03/01/01@20/09/04
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/01/27@32/07/05
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/05@01/06/02/01@43/01/03/09
+n,n,n,w,n,n,s,n,n,n,n,n,n,s,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,s,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,s,n,n,n,n,n,n,01/04@10/01/02@10/01/09/05@10/03/01@10/03/02@11/02/03/04@16/19/03
+n,n,n,w,n,n,s,n,n,w,n,n,n,s,n,n,s,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,s,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/06/05@10/01/05/01@11/02/03/01@11/02/03/04
+n,n,n,s,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/04@40/01@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,r,n,r,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,s,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,s,42/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/04@01/05/25@14/07/03@16/01@30/05/01/10@32/01@32/07/07@34/11/03/13
+n,n,n,s,n,n,s,n,n,w,n,n,n,w,n,n,s,n,n,s,n,s,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,s,01/05/25@10/01/05/01@11/02/03/01@18/02/09@42/01
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,16/01@32/01/03@40/01@42/04/03@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03@11/04/03@16/03/03@20/01/21
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/02/02/09@01/03/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/06@10/01/09/05@11/02/03/04/01@32/01/06@34/11/09
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/06
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,s,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,20/09/07/25@42/09
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,11/02/03/04@14/07/03@18/02/01
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,14/01@16/01@32/01/07@42/04
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/01@11/02/03/01
+n,n,n,w,n,n,s,n,n,s,n,n,n,s,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,s,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/03/07@10/01/03
+n,n,n,s,n,n,w,n,n,s,n,n,s,s,s,s,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/09/07
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,11/04/01@16/19/03@42/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/04@10/03/01@14/01@14/04@16/01@16/19/03@20/03@20/09/05@32/01/07@41/01/01@42/10
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,s,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,20/03/01/05@20/09/01@42/10/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/02@12/01@14/04@16/07@20/01/10@20/01/21@20/09/01@42/10/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,18/02/01/01/01@20/01/10@20/09/16
+n,n,n,w,n,n,w,n,n,w,n,n,s,w,s,s,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05@02/10@02/11@02/13/03@16/21/08@20/01/15
+n,n,n,n,n,n,w,n,n,s,n,n,s,w,s,s,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,s,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/05/03@10/03/01/01@10/03/01/03@14/07/05@14/10@14/13/01/01@16/01@16/19/03@38/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/02/07@02/01
+n,n,n,n,n,n,w,n,n,w,n,n,n,s,n,n,s,n,n,s,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/04@20/09/07/05
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,s,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/06/02/01@14/07/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,12/01/01@42/16
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/05/05/07@01/06@32/07/07/03
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/03/01
+n,n,n,w,n,n,w,n,n,w,n,n,w,s,w,s,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/03/05/01@01/20/17/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/09/05@10/03/01@11/02/01@16/03/03@42/10/07
+n,n,n,w,n,n,w,n,n,s,n,n,n,s,n,n,w,n,n,s,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,s,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/09/05@11/02/03/04@14/07/04@42/10/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/03/05/01@01/01/05/03@01/20/17/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,02/01/03@11/02/03/01@11/02/03/04
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/01/03/03@10/01/03/05@10/01/05/01@10/03/01/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/04
+n,n,n,n,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,40/10@42/16
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/05/02/04@01/05/02/07@02/07
+n,n,n,w,n,n,w,n,n,w,n,n,w,s,w,w,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/06/02@12/07@14/07
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/02
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/09/05@11/02/03/04@14/07/04
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/03/04
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/04@12/04/01@12/07
+n,n,n,n,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/04@10/03/01@14/07/03@40/01
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,s,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,20/01/13
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,s,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,11/02/01@16/03/01@42/10
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,s,n,n,w,n,s,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,32/01@42/01@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,01/04@14/07/03@32/01@34/01/01@42/01
+n,n,n,s,n,n,w,n,n,w,n,n,n,w,n,n,s,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05@14/07/02
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,20/01/01/07/07@34/01/03/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,11/04/01@11/06/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/05/02/07@02/01
+n,n,n,w,n,n,w,n,n,w,n,n,w,w,w,s,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/06/05@02/25
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/05/01
+n,n,n,n,n,n,s,n,n,s,n,n,s,s,s,s,w,n,n,w,n,s,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,s,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/01/03/05@10/01/05/01
+n,n,n,w,n,n,w,n,n,w,n,n,s,w,w,w,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/01/03@18/02/01/01/01@41/01/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/01/03/05@10/01/05/01@10/03/01/01/09@10/03/01/03@16/03/01@16/19@18/02/01
+n,n,n,s,n,n,s,n,n,w,n,n,s,s,s,s,w,n,n,w,n,w,n,s,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,14/04@16/01@20/09/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/01/09/06@01/07/01
+n,n,n,s,n,n,w,n,n,w,n,n,n,s,n,n,s,n,n,s,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/04/05@40/10/02/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,r,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,16/19/05@43/01/03/05
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/01/11/02/01@01/01/11/02/02@01/01/11/03/01@01/01/11/03/02@01/01/11/04/01@01/01/11/04/02
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/02/04@01/05/02/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,s,n,w,n,r,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/05/01@11/04/03@42/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/01@11/02/03/04@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/04@16/07@20/01/10@20/01/21@20/09/01@42/10/05
+n,n,n,s,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/02/07@02/01@02/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/01/01/01@32/07@34/01/01/01
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/04@16/07@20/01/10@20/01/21@20/09/01@42/10/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,s,n,w,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,02/45/11@20/09/14@20/09/16/09/03@43/01/03/05
+n,n,n,w,n,n,s,n,n,w,n,n,n,s,n,n,s,n,n,s,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,s,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/10@20/01/01/01@20/01/15@20/03/22@20/09/13@34/01/01/01@34/01/01/03
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,42/01
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/07/11@14/13/01@14/13/04/02
+n,n,n,s,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/04@16/01@20/01/10
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,s,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,02/45/11@20/09/14@20/09/16/09/03@20/09/18/09/01@32/01/03@42/01@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@11/02/03/04@14/07/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01@12@14/07@14/13/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,s,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/03/01/02@01/01/03/02/02@01/06/05
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,01/01/05/01/01@01/07/01@01/20/17/03@42/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/04/03@34/11/03/07@40/01/03@41/01/01@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/06/05@20/01/13
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,s,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/10
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/04@20/09/13@20/09/18/09/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,02/13
+n,n,n,s,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/06/02/01@10/03/02@20/09/16/09/03@30/01/09/09@43/01/03/09
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/04/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,s,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,s,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11@16/01@20/09/01@32/01/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,42/16
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/04/01@12/01/01@14/10@16/19/03
+n,n,n,s,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/10
+n,n,n,n,n,n,w,n,n,w,n,n,w,w,w,w,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/01/11@20/01/27@32/07
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/05/02/07@02/10@02/11@02/13/03@16/21/08@20/01/15
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,14/04@14/07/07@14/07/11/01@14/13/01/01@20/09/13
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/02@32/07/01
+n,n,n,n,n,n,w,n,n,w,n,n,s,w,s,s,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/02/07@11/02/03/04
+n,n,n,n,n,n,n,n,n,n,n,n,r,n,r,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/05@01/06/06/11@14/07@42/01
+n,n,n,w,n,n,w,n,n,w,n,n,w,w,w,w,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/03/01/03@01/05/13/03@02/13/03@43/01/03/09
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,14/07/11
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,s,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01@01/02
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/03/16/01@11/04
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/01/01/11@14/07/05@14/10@14/13/01/01@16/01@16/19/03
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,s,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/05@14/10@40/01@42/04/03@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/01@14/13@16/09@18/02/01/02/03@34/11/12
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/01/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/01@10/03/05/01@42/04/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/01/01/01/01@20/09/18@34/01/01/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/03/01@16/19/05@20/09/16/09/03@30/01/05/05/01@30/05@34/11/03/07@40/01/03@42/04@42/29@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/04@14/07/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@02/13@10/03/01@10/03/02@14/07/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/03/01/04@01/05/25@02/19
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/05@10/03/02@42/10/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/04/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,01/05/03/03/04@10/03/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/01/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,r,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/13@01/05@01/07/03@10/03/01@14/07/09@42/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/03@02/19@34/11/03/07@40/01@42/01@43/01/03/09
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/06/05@01/01/09/03/01@01/02
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/04@20/09/07@20/09/13@42/22
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,s,n,n,w,n,r,n,s,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,s,40/01@42/01@42/04@43/01/03/05
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/11/02/01@01/01/11/03/01@01/01/11/04/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/01
+n,n,n,s,n,n,s,n,n,w,n,n,n,s,n,n,w,n,n,s,n,s,n,s,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,01/05/25@18/02/03@18/02/05@30/01/05/05/01@34/11/03/07@40/01/03@42/01@42/04/03@42/29@43/01/03/05
+n,n,n,n,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,14/04@20/01/10@20/03@20/09/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,w,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/03/04/03
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,11/04/01@11/04/03/01@16/03/03
+n,n,n,s,n,n,s,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/03/03@01/01/03/05/02@01/01/05/03@01/02
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,42/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,s,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/10@20/01/01/01@20/01/15@20/03/22@20/09/13@34/01/01/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/06/06/11@16/21/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/11/04/01@01/01/13@11/02/03/01@11/02/03/04
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,11/02/03/04@32/01/01@32/05/01/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/25@20/09/16@42/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,s,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,01/04@11/02/03/04@14/07/03@16/17/01@18/01/01@18/02/01@30/01/05/01@34/01@34/11/03/07@40/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/03/07@10/01/03@10/01/05@18/02/01/02@32/01/09@42/16
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,s,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/01/01@16/03/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/04
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01@01/02
+n,n,n,w,n,n,w,n,n,s,n,n,n,s,n,n,s,n,n,w,n,w,n,w,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,01/03/04
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/09/05@10/03/01@40/01@40/20@42/04@43/01/03/05
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,20/01/01/01/01@20/01/01/07/07@20/01/03@20/09/18@34/01/01/03@34/01/03/03
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/06/02/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/04@16/03/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,12/01/01@42/16
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,s,n,n,w,n,w,n,s,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/01@20/01/01/01/01@32/07@34/01/01/01
+n,n,n,s,n,n,w,n,n,s,n,n,n,s,n,n,w,n,n,s,n,w,n,s,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,s,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,11/04/02@14/04@16/07@20/01/10@20/01/21@20/09/01@42/10/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/04/03@14/07/04
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,r,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/03/05/01@01/20/17/01@42/01
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/03/16/01@01/04@10/01@11/04@12/07@16/19/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,16/01@32/01/03@40/01@42/04/03@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/07/01@32/01
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/07/01@10@16/01@32/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/05/01@10/01/09/05@10/03/01/03@16/03/03@32/01/09@42/10/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/04@16/07@20/01/10@20/01/21@20/09/01@42/10/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/05/01@10/03/01/03@32/01/09
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/03/01@16/19/05@42/04/05
+n,n,n,s,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/04/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/04@16/07@20/01/10@20/01/21@20/09/01@42/10/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/01/10@20/01/13@20/03/22
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,s,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/04
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/01/01@16/03/03
+n,n,n,s,n,n,s,n,n,w,n,n,n,w,n,n,s,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/01/01/11@10/03/02@10/03/05/01@20/09/14
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/04@20/01/10@20/03@20/09/04
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/03/02/02@32/01/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,s,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/02/04@01/05/02/07@02/19@32/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/01/09/05@11/02/03/04@14/07/04@34/11/03/07@40/01@43/01/03/09
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/06
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@16/19/03@20/03/25@20/09/04@34/01/01/01
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/07/05@14/13/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,r,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,16/01@20/09/07@30
+n,n,n,s,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,s,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,20/09/16
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/03/02/01@01/05/02/07@02/10@11@16/21/07
+n,n,n,w,n,n,w,n,n,w,n,n,w,w,w,w,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/06
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/05@01/06@01/20/05/09@14/07/11@14/13
+n,n,n,s,n,n,w,n,n,w,n,n,s,w,s,s,s,n,n,s,n,s,n,s,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/04@20/09/13
+n,n,n,w,n,n,w,n,n,w,n,n,s,w,w,w,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/02/07@01/05/03@40/20@42/16
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/03/16@10/01/03@16/03/01@16/03/03@16/17/07
+n,n,n,s,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,r,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/02/07/01@01/03/13@01/05/25@11/02/03/04/03@42/01
+n,n,n,s,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/01@16/01@32/01/07
+n,n,n,s,n,n,s,n,n,w,n,n,n,s,n,n,s,n,n,s,n,s,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/06/05@01/01/09/03@01/01/13@01/02/07@11/02/03/01@11/02/03/04@18/02/09
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/03/16/01@11/04/01
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05@02/04
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,r,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,12/01@14/07@40/01@43/01/03/05
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/03/01@10/03/05/01@42/04/05
+n,n,n,w,n,n,w,n,n,w,n,n,w,w,w,w,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@01/06/02/01@30/01/09/11@43/01/03/09
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/01/05/03@11/02/03/01/04@12/07@16/19@20/01/21
+n,n,n,w,n,n,s,n,n,w,n,n,n,w,n,n,w,n,n,w,n,s,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/01@14/01@16/01@42/04
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/04@10/03/03@14/07/03@20/09/18/09/01@32/01@34/11/12@40/01@43/01/03/05
+n,n,n,n,n,n,s,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,r,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/03@10/03/03@34/11/03/07@43/01/03/05@43/01/03/09
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,r,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/03/02@43/01/03/09
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@12@16/01@16/19/03@32/01/07
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,w,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,16/01@20/09/03@42/19
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/04@12/01
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,s,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/04@10/01/02@10/01/11@16/19/03@42/16
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,s,n,r,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/05@01/06@14/07/02/02@42/01
+n,n,n,n,n,n,w,n,n,w,n,n,w,w,w,w,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/04@14/07/11/01@14/13/04@16/01@20/09/13@20/09/14
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,14/01@20/09/18/09/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/02/07/01@11/02/03/01@18/02/09@34/11/03
+n,n,n,w,n,n,w,n,n,w,n,n,w,w,w,w,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/06/10@20/01/13@32/05/01/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,s,n,n,w,n,s,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/03/01/01@01/05/02/07@02/01@02/07@32/01@32/07
+n,n,n,w,n,n,w,n,n,w,n,n,w,w,w,w,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/02@14/04@14/07/11/01@20/09/13@42/19@43/01/03/09
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,12/01/01@42/16
+n,n,n,w,n,n,w,n,n,s,n,n,n,s,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,s,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/06/02/01@20/01/13@32/05/01/03
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/05@30/01/05/05/01@30/05/01@32/01/05@34/11/09@42/01@42/04/03
+n,n,n,n,n,n,w,n,n,w,n,n,w,w,w,s,s,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/01/01@42/16
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,11/04/03/01@16/03/03
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/03/04@01/03/10@10/03/01@11/06/02
+n,n,n,s,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/04@10/03/03@14/07/03@30/01/05/05/01@40/01@42/04@42/29@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,w,s,s,s,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,10/03/01/01/03@11/02/03/04/01
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,w,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,43/01/03/05
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/04@10/01/05/03/03@10/01/09/05@11/02/03/04@14/07/04@34/11/03/07@40/20@43/01/03/09
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/01/02@10/01/05/03/03@32/01/09@42/10/03
+n,n,n,s,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/01@11/02/02@16/03/01@42/01
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,s,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,14/04@14/07/11/01@14/13/04@20/09/13
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/06
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,20/01/01/07/07@34/01/03/03
+n,n,n,s,n,n,w,n,n,w,n,n,n,w,n,n,s,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/06/06@01/07/01@01/20@16/13@20/03
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/06/06/11
+n,n,n,w,n,n,s,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,r,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/02@10/01/03/05@10/01/05/03/03@10/01/09/05@10/01/11@10/03/04/03@10/03/04/09@11/02/03/01/04@11/02/03/04
+n,n,n,w,n,n,s,n,n,s,n,n,n,s,n,n,w,n,n,s,n,w,n,s,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,s,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,20/01/07@20/09/18
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,s,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,s,12/04/01@16/03/03@42/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/01/09/05@11/02/03/04@14/07/04@34/11/03/07
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,s,s,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05@02/16/01
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,s,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,30/01/05/05/01@30/05/01@32/01/05@34/11/09@42/01@42/04/03
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,r,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/25@11/02/03/04/01@32/01/03@42/01@43/01/03/05
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,20/03
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,12/01/01@16/03/03
+n,n,n,s,n,n,w,n,n,w,n,n,n,w,w,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/01/01/01/01@20/09/18@32/07@34/01/01/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/03/01@10/03/04/05@11/02/03/01/04@16/03/01
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/07/01@02/01/01@32/01/01@32/01/03@32/01/04@32/01/05@32/07/03
+n,n,n,s,n,n,s,n,n,w,n,n,n,s,n,n,w,n,n,s,n,s,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,s,n,n,n,n,n,n,s,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,16/01@30/01/05/05/01@30/05/01@30/05/02/24@32/01/03@32/01/05@34/11/09@42/01@42/04/03@43/01/03/05
+n,n,n,s,n,n,s,n,n,w,n,n,n,w,n,n,s,n,n,s,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,s,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,01/04@12@14/07/03@32/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/04@20/09/16
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/04@12/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/06@10/01/09/05@11/02/03/04@16/03/01
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/10@20/01/10@20/09/04@42/16
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/04/01@11/02/03/01@11/02/03/04@18/02/09
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/01@10/03/04/01@14/01@14/07/05@14/10@14/13/01/01@16/01@30/01/09/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,s,n,s,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/01/01/11@10/03/05/01@16/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/10@20/01/10@20/09/07
+n,n,n,w,n,n,w,n,n,s,n,n,n,s,n,n,w,n,n,s,n,s,n,s,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,s,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/04@16/01@16/07@20/01/10@20/01/21@20/09/01@42/10/05
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/04@01/06@20/09/18/09/01@30/01/09/11@42/01
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,11/02/01@11/02/02@16/03/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05@01/20@32/01/03@34/11/03/13
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/01@16/03/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,40/01@42/04@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,s,n,n,w,n,w,n,w,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,42/16
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/06/05@02/13/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/02@11/02/03/01@18/02/09
+n,n,n,w,n,n,s,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/02/02/09/05@32/07/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01@01/03/01@01/03/04
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,20/03
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05@43/01/03/05
+n,n,n,n,n,n,n,n,n,n,n,n,w,n,w,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/03/16/03@10/01@10/03/02@43/01/03/09
+n,n,n,n,n,n,n,n,n,n,n,n,s,n,s,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,11/04/03/01@16/03/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/01@16/03/01
+n,n,n,s,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/01@14/01@16/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/07/03@02/13@02/25@42/16
+n,n,n,s,n,n,w,n,n,s,n,n,n,s,n,n,w,n,n,s,n,w,n,s,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,s,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,10/03/01/01/09@14/07/07@14/13/01
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,42/01@43/01/03/05
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,s,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/03/16/01@11/04/01@11/04/03/01@12/07@16/19/03
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,12/01/01@12/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/06@32/01/05@34/11/09
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/09/04@01/01/09/05@01/05@02/16
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,s,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/04/01@16/03/01@30@40/01/03@42/01
+n,n,n,w,n,n,s,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/01@11/04/01@16/03/03
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,01/07/01@02/13/03@14/10@16/17/09@42/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,s,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/03@01/04@10/01/05/01@10/03/01/03@14/07/03@30/01/05/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/10
+n,n,n,w,n,n,s,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/01/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,14/04@16/01@20/01/10
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,s,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,01/06/05@01/07/01@14/07@14/10
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/01/09/05@11/02/03/01@11/02/03/04@14/07/04@18/02/09@42/10/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,s,n,n,s,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/02/07@02/10@42/16
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/02/07@02/10
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/01/01/07@34/01/03/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/04@32/01/03@34/11/03/13
+n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,20/01/17@20/03@20/09/04
+n,n,n,s,n,n,w,n,n,w,n,n,n,s,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/01/05/01@10/03/01@11/02/03/01/01@11/02/03/04@18/02/01
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/05/02/04@01/05/02/07@02/19@32/01
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,s,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,20/01/01/01@20/01/15@20/03/22@20/09/13@34/01/01/03
+n,n,n,w,n,n,s,n,n,w,n,n,n,s,n,n,w,n,n,s,n,s,n,w,n,n,n,s,n,n,n,n,n,n,n,n,n,n,n,n,w,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,s,n,n,n,n,n,n,n,n,n,n,11/04/03/01@14/10@16/03/03
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/07/07@11/02/03/04/03@16/03/01
+n,n,n,w,n,n,s,n,n,s,n,n,n,s,n,n,w,n,n,w,n,s,n,s,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,s,s,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,11/02/03/01@11/02/03/04
+n,n,n,n,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01@01/05/02/04@01/05/02/07@02/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,10/03/01/02@34/11/03/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,01/01/06/02/01
+n,n,n,s,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,s,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,10/01/03/03@10/01/09/05@11/02/03/04@34/11/03/07
+n,n,n,w,n,n,w,n,n,w,n,n,n,w,n,n,w,n,n,w,n,w,n,w,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,n,w,w,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,n,w,n,n,n,n,n,n,n,n,n,n,12/04/01
