@@ -15,7 +15,7 @@ do
                         do
                             for seed in 0
                             do
-                                python train_copy.py --dataset "diatoms_others" --seed "$seed" --device "$device" --lr "$lr" --dropout "$dropout" --hidden_dim "$hidden_dim"  --num_layers "$num_layers" --weight_decay "$weight_decay" --non_lin "$non_lin" --batch_size "$batch_size" &
+                                python train.py --dataset "diatoms_others" --seed "$seed" --device "$device" --lr "$lr" --dropout "$dropout" --hidden_dim "$hidden_dim"  --num_layers "$num_layers" --weight_decay "$weight_decay" --non_lin "$non_lin" --batch_size "$batch_size" &
                             done
                         done
                     done
