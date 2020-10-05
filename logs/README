@@ -1,0 +1,2 @@
+Logs Folder: 
+train.py will create a folder "<dataset_name>" and write a new csv file for each hyperparameter configuration with the performance (per epoch) of the model (on the validation set).
