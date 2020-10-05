@@ -3,3 +3,4 @@
 weights/*
 results/*.csv
 logs/*/measures*
+logs/*/.txt
