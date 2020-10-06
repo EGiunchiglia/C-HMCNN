@@ -80,22 +80,14 @@ def main():
 
     parser = argparse.ArgumentParser(description='Train neural network on train and validation set')
 
-    # Required  parameters
+    # Required  parameter
     parser.add_argument('--dataset', type=str, default=None, required=True,
                         help='dataset name, must end with: "_GO", "_FUN", or "_others"' )
-    # parser.add_argument('--epochs', type=int, default=None, required=True,
-    #                     help='number of epochs to train the model')
-    # parser.add_argument('--hidden_dim', type=int, default=None, required=True,
-    #                     help='dimension of hidden layers')
-    # parser.add_argument('--lr', type=float, default=None, required=True,
-    #                     help='learning rate')
     # Other parameters
     parser.add_argument('--seed', type=int, default=0,
                         help='random seed (default: 0)')
     parser.add_argument('--device', type=str, default='0',
                         help='GPU (default:0)')
-    parser.add_argument('--verbose', type=bool, default=False,
-                        help='If True, it prints the value of the loss every 10 epochs')
     args = parser.parse_args()
 
     assert('_' in args.dataset)
