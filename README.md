@@ -17,7 +17,7 @@ Example:
 
 If you want to execute the model for multiple seeds you can modify the script ```main_script.sh``` and execute it.
 
-The results will be written in the folder ```results/```in the file ```<dataset_name>.csv```.
+The results will be written in the folder ```results/``` in the file ```<dataset_name>.csv```.
 
 ## Hyperparameters search
 
