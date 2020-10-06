@@ -22,3 +22,21 @@ The results will be written in the folder ```results/``` in the file ```<dataset
 ## Hyperparameters search
 
 If you want to execute again the hyperparameters search you can modify the script ```script.sh```according to your necessity and execute it. 
+
+
+## Architecture
+
+The code was run on a Titan Xp with 12GB memory. A description of the environment used and its dependencies is given in ```c-hmcnn_enc.yml```.
+
+## Reference
+```
+@inproceedings{giunchiglia2020neurips,
+    title     = {Coherent Hierarchical Multi-label Classification Networks},
+    author    = {Eleonora Giunchiglia and
+               Thomas Lukasiewicz},
+    booktitle = {34th Conference on Neural Information Processing Systems (NeurIPS 2020)},
+    address = {Vancouver, Canada},
+    month = {December},
+    year = {2020}
+}
+```
