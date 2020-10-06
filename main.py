@@ -83,12 +83,12 @@ def main():
     # Required  parameters
     parser.add_argument('--dataset', type=str, default=None, required=True,
                         help='dataset name, must end with: "_GO", "_FUN", or "_others"' )
-    parser.add_argument('--epochs', type=int, default=None, required=True,
-                        help='number of epochs to train the model')
-    parser.add_argument('--hidden_dim', type=int, default=None, required=True,
-                        help='dimension of hidden layers')
-    parser.add_argument('--lr', type=float, default=None, required=True,
-                        help='learning rate')
+    # parser.add_argument('--epochs', type=int, default=None, required=True,
+    #                     help='number of epochs to train the model')
+    # parser.add_argument('--hidden_dim', type=int, default=None, required=True,
+    #                     help='dimension of hidden layers')
+    # parser.add_argument('--lr', type=float, default=None, required=True,
+    #                     help='learning rate')
     # Other parameters
     parser.add_argument('--seed', type=int, default=0,
                         help='random seed (default: 0)')
@@ -101,28 +101,42 @@ def main():
     assert('_' in args.dataset)
     assert('FUN' in args.dataset or 'GO' in args.dataset or 'others' in args.dataset)
 
-    # Set the hyperparameters 
-    batch_size = 4
-    num_layers = 3
-    dropout = 0.7
-    non_lin = 'relu'
-    hidden_dim = args.hidden_dim
-    lr = args.lr 
-    weight_decay = 1e-5
-    hyperparams = {'batch_size':batch_size, 'num_layers':num_layers, 'dropout':dropout, 'non_lin':non_lin, 'hidden_dim':hidden_dim, 'lr':lr, 'weight_decay':weight_decay}
-
-
     # Load train, val and test set
     dataset_name = args.dataset
     data = dataset_name.split('_')[0]
     ontology = dataset_name.split('_')[1]
 
     # Dictionaries with number of features and number of labels for each dataset
-    input_dims = {'diatoms':371, 'enron':1001,'imclef07a': 80, 'imclef07d': 80,'cellcycle':77, 'church':27, 'derisi':63, 'eisen':79, 'expr':561, 'gasch1':173, 'gasch2':52, 'hom':47034, 'seq':529, 'spo':86}
-    output_dims_FUN = {'cellcycle':499, 'church':499, 'derisi':499, 'eisen':461, 'expr':499, 'gasch1':499, 'gasch2':499, 'hom':499, 'seq':499, 'spo':499}
-    output_dims_GO = {'cellcycle':4122, 'church':4122, 'derisi':4116, 'eisen':3570, 'expr':4128, 'gasch1':4122, 'gasch2':4128, 'hom':4128, 'seq':4130, 'spo':4116}
+    input_dims = {'diatoms':371, 'enron':1001,'imclef07a': 80, 'imclef07d': 80,'cellcycle':77, 'derisi':63, 'eisen':79, 'expr':561, 'gasch1':173, 'gasch2':52, 'seq':529, 'spo':86}
+    output_dims_FUN = {'cellcycle':499, 'derisi':499, 'eisen':461, 'expr':499, 'gasch1':499, 'gasch2':499, 'seq':499, 'spo':499}
+    output_dims_GO = {'cellcycle':4122, 'derisi':4116, 'eisen':3570, 'expr':4128, 'gasch1':4122, 'gasch2':4128, 'seq':4130, 'spo':4116}
     output_dims_others = {'diatoms':398,'enron':56, 'imclef07a': 96, 'imclef07d': 46, 'reuters':102}
     output_dims = {'FUN':output_dims_FUN, 'GO':output_dims_GO, 'others':output_dims_others}
+
+    #Dictionaries with the hyperparameters associated to each dataset
+    hidden_dims_FUN = {'cellcycle':500, 'derisi':500, 'eisen':500, 'expr':1250, 'gasch1':1000, 'gasch2':500, 'seq':2000, 'spo':250}
+    hidden_dims_GO = {'cellcycle':1000, 'derisi':500, 'eisen':500, 'expr':4000, 'gasch1':500, 'gasch2':500, 'seq':9000, 'spo':500}
+    hidden_dims_others = {'diatoms':2000, 'enron':1000,'imclef07a':1000, 'imclef07d':1000}
+    hidden_dims = {'FUN':hidden_dims_FUN, 'GO':hidden_dims_GO, 'others':hidden_dims_others}
+    lrs_FUN = {'cellcycle':1e-4, 'derisi':1e-4, 'eisen':1e-4, 'expr':1e-4, 'gasch1':1e-4, 'gasch2':1e-4, 'seq':1e-4, 'spo':1e-4}
+    lrs_GO = {'cellcycle':1e-4, 'derisi':1e-4, 'eisen':1e-4, 'expr':1e-4, 'gasch1':1e-4, 'gasch2':1e-4, 'seq':1e-4, 'spo':1e-4}
+    lrs_others = {'diatoms':1e-5, 'enron':1e-5,'imclef07a':1e-5, 'imclef07d':1e-5}
+    lrs = {'FUN':lrs_FUN, 'GO':lrs_GO, 'others':lrs_others}
+    epochss_FUN = {'cellcycle':106, 'derisi':67, 'eisen':110, 'expr':20, 'gasch1':42, 'gasch2':123, 'seq':13, 'spo':115}
+    epochss_GO = {'cellcycle':62, 'derisi':91, 'eisen':123, 'expr':70, 'gasch1':122, 'gasch2':177, 'seq':45, 'spo':103}
+    epochss_others = {'diatoms':474, 'enron':133,'imclef07a':592, 'imclef07d':588}
+    epochss = {'FUN':epochss_FUN, 'GO':epochss_GO, 'others':epochss_others}
+
+    # Set the hyperparameters 
+    batch_size = 4
+    num_layers = 3
+    dropout = 0.7
+    non_lin = 'relu'
+    hidden_dim = hidden_dims[ontology][data]
+    lr = lrs[ontology][data]
+    weight_decay = 1e-5
+    num_epochs = epochss[ontology][data]
+    hyperparams = {'batch_size':batch_size, 'num_layers':num_layers, 'dropout':dropout, 'non_lin':non_lin, 'hidden_dim':hidden_dim, 'lr':lr, 'weight_decay':weight_decay}
 
 
     # Set seed
@@ -190,10 +204,6 @@ def main():
                                             batch_size=batch_size, 
                                             shuffle=False)
 
-
-
-    num_epochs = args.epochs
-
     # We do not evaluate the performance of the model on the 'roots' node (https://dtai.cs.kuleuven.be/clus/hmcdatasets/)
     if 'GO' in dataset_name: 
         num_to_skip = 4
@@ -219,6 +229,7 @@ def main():
             optimizer.zero_grad()
             output = model(x.float())
 
+            #MCLoss
             constr_output = get_constr_out(output, R)
             train_output = labels*output.double()
             train_output = get_constr_out(train_output, R)
@@ -236,10 +247,9 @@ def main():
             loss.backward()
             optimizer.step()
 
-        if args.verbose and epoch%10==0:    
-            print('\nEpoch: {} - Loss: {:.4f}, Train precision score: ({:.5f})\n'.format(epoch, loss))
-
     for i, (x,y) in enumerate(test_loader):
+
+        model.eval()
                 
         x = x.to(device)
         y = y.to(device)
