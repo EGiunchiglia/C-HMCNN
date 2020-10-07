@@ -15,7 +15,7 @@ Example:
 
 **Note:** the parameter passed to "dataset" must end with: '_FUN', '_GO', or '_others'.
 
-If you want to execute the model for multiple seeds you can modify the script ```main_script.sh``` and execute it.
+If you want to execute the model for 10 seeds you can modify the script ```main_script.sh``` and execute it.
 
 The results will be written in the folder ```results/``` in the file ```<dataset_name>.csv```.
 
@@ -27,6 +27,16 @@ If you want to execute again the hyperparameters search you can modify the scrip
 ## Architecture
 
 The code was run on a Titan Xp with 12GB memory. A description of the environment used and its dependencies is given in ```c-hmcnn_enc.yml```.
+
+By running the script ```main_script.sh``` we obtain the following results (average over the 10 runs):
+
+| Dataset       | Result |
+| ---           | ----   |
+| Cellcycle_FUN | 0.255  |
+| Derisi_FUN    | 0.195  |
+| Eisen_FUN     | 0.306  |
+| Expr_FUN      | 0.302  |
+| Gasch1_FUN    | 
 
 ## Reference
 ```
