@@ -40,9 +40,9 @@ By running the script ```main_script.sh``` we obtain the following results (aver
 | Gasch2_FUN    | 0.258  |
 | Seq_FUN       | 0.292  |
 | Spo_FUN       | 0.215  |
-| Cellcycle_GO  | 0.255  |
-| Derisi_GO     | 0.195  |
-| Eisen_GO      | 0.306  |
+| Cellcycle_GO  | 0.413  |
+| Derisi_GO     | 0.370  |
+| Eisen_GO      | 0.455  |
 | Expr_GO       | 0.302  |
 | Gasch1_GO     | 0.286  |
 | Gasch2_GO     | 0.258  |
