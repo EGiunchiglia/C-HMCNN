@@ -48,6 +48,11 @@ By running the script ```main_script.sh``` we obtain the following results (aver
 | Gasch2_GO     | 0.258  |
 | Seq_GO        | 0.292  |
 | Spo_GO        | 0.215  |
+| Diatoms_others| 
+| Enron_others  | 0.756  |
+| Imclef07a_others | 0.956 |
+| Imclef07d_others | 0.956 |
+
 
 
 ## Reference
