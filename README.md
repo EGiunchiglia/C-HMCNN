@@ -43,12 +43,12 @@ By running the script ```main_script.sh``` we obtain the following results (aver
 | Cellcycle_GO  | 0.413  |
 | Derisi_GO     | 0.370  |
 | Eisen_GO      | 0.455  |
-| Expr_GO       | 0.302  |
-| Gasch1_GO     | 0.286  |
-| Gasch2_GO     | 0.258  |
-| Seq_GO        | 0.292  |
-| Spo_GO        | 0.215  |
-| Diatoms_others| 
+| Expr_GO       | 0.  |
+| Gasch1_GO     | 0.436  |
+| Gasch2_GO     | 0.  |
+| Seq_GO        | 0.  |
+| Spo_GO        | 0.  |
+| Diatoms_others| 0.758  |
 | Enron_others  | 0.756  |
 | Imclef07a_others | 0.956 |
 | Imclef07d_others | 0.956 |
