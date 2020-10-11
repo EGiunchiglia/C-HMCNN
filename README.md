@@ -45,9 +45,9 @@ By running the script ```main_script.sh``` we obtain the following results (aver
 | Eisen_GO      | 0.455  |
 | Expr_GO       | 0.447  |
 | Gasch1_GO     | 0.436  |
-| Gasch2_GO     | 0.  |
-| Seq_GO        | 0.  |
-| Spo_GO        | 0.  |
+| Gasch2_GO     | 0.414  |
+| Seq_GO        | 0.446  |
+| Spo_GO        | 0.382  |
 | Diatoms_others| 0.758  |
 | Enron_others  | 0.756  |
 | Imclef07a_others | 0.956 |
