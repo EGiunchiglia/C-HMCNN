@@ -1,6 +1,6 @@
 # C-HMCNN
 
-Code and data for the paper "Coherent Hierarchical Multi-label Classification Networks" (link here). 
+Code and data for the paper "[Coherent Hierarchical Multi-label Classification Networks](https://proceedings.neurips.cc//paper/2020/file/6dd4e10e3296fa63738371ec0d5df818-Paper.pdf)". 
 
 ## Evaluate C-HMCNN
 
