@@ -14,9 +14,9 @@ print(stats.friedmanchisquare(meas_us,meas_lmlp,meas_hmcnf,meas_hmcnr, meas_clus
 
 import Orange
 import matplotlib.pyplot as plt
-names = ["CCN($h$)", "HMCN-F", "HMCN-R", "CLUS-ENS", "HMC-LMLP"]
+names = ["C-HMCNN($h$)", "HMCN-F", "HMCN-R", "CLUS-ENS", "HMC-LMLP"]
 avranks = [np.mean(meas_us), np.mean(meas_hmcnf), np.mean(meas_hmcnr), np.mean(meas_clusens), np.mean(meas_lmlp)]
 cd = Orange.evaluation.compute_CD(avranks, 20) #tested on 20 datasets
 print(cd)
 Orange.evaluation.graph_ranks(avranks, names, cd=cd, width=6, textspace=1.5)
-plt.savefig("nemenyi.eps", format='eps')
+plt.savefig("nemenyi.png", format='png')
