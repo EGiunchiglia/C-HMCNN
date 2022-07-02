@@ -156,16 +156,16 @@ def main():
     different_from_0 = torch.tensor(np.array((test.Y.sum(0)!=0), dtype = np.uint8), dtype=torch.uint8)
 
     # Compute matrix of ancestors R
-    # Given n classes, R is an (n x n) matrix where R_ij = 1 if class i is ancestor of class j
+    # Given n classes, R is an (n x n) matrix where R_ij = 1 if class i is descendant of class j
     R = np.zeros(train.A.shape)
     np.fill_diagonal(R, 1)
-    g = nx.DiGraph(train.A)
+    g = nx.DiGraph(train.A) # train.A is the matrix where the direct connections are stored 
     for i in range(len(train.A)):
-        descendants = list(nx.descendants(g, i))
-        if descendants:
-            R[i, descendants] = 1
+        ancestors = list(nx.descendants(g, i)) #here we need to use the function nx.descendants() because in the directed graph the edges have source from the descendant and point towards the ancestor 
+        if ancestors:
+            R[i, ancestors] = 1
     R = torch.tensor(R)
-    #Transpose to get the ancestors for each node 
+    #Transpose to get the descendants for each node 
     R = R.transpose(1, 0)
     R = R.unsqueeze(0).to(device)
 
