@@ -1,0 +1,14 @@
+name: cs7643-fp
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - matplotlib
+  - pyyaml=5.4.1
+  - torchvision
+  - pytorch
+  - networkx
+  - keras
+  - tensorflow
+  - scikit-learn

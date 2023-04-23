@@ -67,3 +67,13 @@ By running the script ```main_script.sh``` we obtain the following results (aver
     year = {2020}
 }
 ```
+
+## GCP VM Instance Setup Guide
+Use the following command in GCP Cloud Shell to create a VM instance
+
+```
+export IMAGE_FAMILY="pytorch-latest-gpu"
+export ZONE="us-west1-b"
+export INSTANCE_NAME="cs7643-fp"
+gcloud compute instances create $INSTANCE_NAME   --zone=$ZONE   --image-family=$IMAGE_FAMILY   --image-project=deeplearning-platform-release   --maintenance-policy=TERMINATE --machine-type=n1-standard-4  --accelerator="type=nvidia-tesla-t4,count=1" --boot-disk-size=100GB  --metadata="install-nvidia-driver=True"
+```
