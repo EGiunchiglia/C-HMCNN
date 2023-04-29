@@ -24,6 +24,7 @@ from sklearn.metrics import f1_score, average_precision_score, precision_recall_
 from models.Transformer import TransformerModel
 from models.ConstrainedFFNNModel import ConstrainedFFNNModel, get_constr_out
 from models.RNN import LSTMModel
+from visualization.viz import draw_loss_acc
 
 
 def main():
@@ -196,6 +197,17 @@ def main():
     if not os.path.exists('logs/'+str(dataset_name)+'/'):
          os.makedirs('logs/'+str(dataset_name)+'/')
 
+    ############################## Visualization ##################################
+    train_loss_list = []
+    val_loss_list = []
+
+    train_acc_list = []
+    val_acc_list = []
+
+    train_score_list = []
+    val_score_list = []
+    ################################################################
+
     for epoch in range(num_epochs):
         total_train = 0.0
         correct_train = 0.0
@@ -229,7 +241,11 @@ def main():
             elif 'transformer' in args.model:
                 ########################### Transformer #############################################
                 loss = criterion(train_output[:, train.to_eval], labels[:, train.to_eval].double())
+<<<<<<< HEAD
             
+=======
+            ############ accuracy is thresholded at 0.5 ###############
+>>>>>>> 8c29c7a (Added visualization methods for accuracy, loss and score;)
             predicted = constr_output.data > 0.5
             # Total number of labels
             total_train += labels.size(0) * labels.size(1)
@@ -273,14 +289,21 @@ def main():
                 constr_val = torch.cat((constr_val, cpu_constrained_output), dim=0)
                 y_val = torch.cat((y_val, y), dim=0)
 
-        score = average_precision_score(y_val[:, train.to_eval], constr_val.data[:, train.to_eval], average='micro') 
-        
+        score = average_precision_score(y_val[:, train.to_eval], constr_val.data[:, train.to_eval], average='micro')
+
         if score >= max_score:
             patience = max_patience
             max_score = score
         else:
             patience = patience - 1
-        
+
+        ############################## Visualization ##########################
+        train_acc_list.append(float(correct_train)/float(total_train))
+        val_acc_list.append(float(correct)/float(total))
+
+        train_score_list.append(train_score)
+        val_score_list.append(score)
+        ################################################################
         floss = open('logs/'+str(dataset_name)+'/measures_batch_size_'+str(args.batch_size)+'_lr_'+str(args.lr)+'_weight_decay_'+str(args.weight_decay)+'_seed_'+str(args.seed)+'_num_layers_'+str(args.num_layers)+'._hidden_dim_'+str(args.hidden_dim)+'_dropout_'+str(args.dropout)+'_'+args.non_lin, 'a')
         floss.write('\nEpoch: {} - Loss: {:.4f}, Accuracy train: {:.5f}, Accuracy: {:.5f}, Precision score: ({:.5f})\n'.format(epoch,
                     loss, float(correct_train)/float(total_train), float(correct)/float(total), score))
@@ -288,6 +311,10 @@ def main():
 
         if patience == 0:
             break
+    ############################## Visualization #############################
+    draw_loss_acc(args.model, args.dataset, train_acc_list, val_acc_list, 'Accuracy')
+    draw_loss_acc(args.model, args.dataset, train_score_list, val_score_list, 'Score')
+    ################################################################
 
 if __name__ == "__main__":
     main()
