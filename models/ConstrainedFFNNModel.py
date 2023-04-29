@@ -36,12 +36,9 @@ class ConstrainedFFNNModel(nn.Module):
             if i == self.nb_layers-1:
                 x = self.sigmoid(self.fc[i](x))
             else:
-                # import pdb
-                # pdb.set_trace()
                 x = self.f(self.fc[i](x))
                 x = self.drop(x)
-        # import pdb
-        # pdb.set_trace()
+
         if self.training:
             constrained_out = x
         else:

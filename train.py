@@ -25,54 +25,6 @@ from models.Transformer import TransformerModel
 from models.ConstrainedFFNNModel import ConstrainedFFNNModel, get_constr_out
 from models.RNN import LSTMModel
 
-# def get_constr_out(x, R):
-#     """ Given the output of the neural network x returns the output of MCM given the hierarchy constraint expressed in the matrix R """
-#     c_out = x.double()
-#     c_out = c_out.unsqueeze(1)
-#     c_out = c_out.expand(len(x),R.shape[1], R.shape[1])
-#     R_batch = R.expand(len(x),R.shape[1], R.shape[1])
-#     final_out, _ = torch.max(R_batch*c_out.double(), dim = 2)
-#     return final_out
-
-
-# class ConstrainedFFNNModel(nn.Module):
-#     """ C-HMCNN(h) model - during training it returns the not-constrained output that is then passed to MCLoss """
-#     def __init__(self, input_dim, hidden_dim, output_dim, hyperparams, R):
-#         super(ConstrainedFFNNModel, self).__init__()
-        
-#         self.nb_layers = hyperparams['num_layers']
-#         self.R = R
-#         fc = []
-#         for i in range(self.nb_layers):
-#             if i == 0:
-#                 fc.append(nn.Linear(input_dim, hidden_dim))
-#             elif i == self.nb_layers-1:
-#                 fc.append(nn.Linear(hidden_dim, output_dim))
-#             else:
-#                 fc.append(nn.Linear(hidden_dim, hidden_dim))
-#         self.fc = nn.ModuleList(fc)
-        
-#         self.drop = nn.Dropout(hyperparams['dropout'])
-        
-        
-#         self.sigmoid = nn.Sigmoid()
-#         if hyperparams['non_lin'] == 'tanh':
-#             self.f = nn.Tanh()
-#         else:
-#             self.f = nn.ReLU()
-        
-#     def forward(self, x):
-#         for i in range(self.nb_layers):
-#             if i == self.nb_layers-1:
-#                 x = self.sigmoid(self.fc[i](x))
-#             else:
-#                 x = self.f(self.fc[i](x))
-#                 x = self.drop(x)
-#         if self.training:
-#             constrained_out = x
-#         else:
-#             constrained_out = get_constr_out(x, self.R)
-#         return constrained_out
 
 def main():
     # Training settings
@@ -120,10 +72,12 @@ def main():
     data = dataset_name.split('_')[0]
     ontology = dataset_name.split('_')[1]
 
-
-   # Dictionaries with number of features and number of labels for each dataset
-   # note: enrontext input dimension is the corpus size (30522 is corpus used by BERT tokenizer)
-    input_dims = {'amz':512, 'enrontext':30522, 'diatoms':371, 'enron':1001,'imclef07a': 80, 'imclef07d': 80,'cellcycle':77, 'church':27, 'derisi':63, 'eisen':79, 'expr':561, 'gasch1':173, 'gasch2':52, 'hom':47034, 'seq':529, 'spo':86}
+    # Dictionaries with number of features and number of labels for each dataset
+    # note: enrontext input dimension is the corpus size (30522 is corpus used by BERT tokenizer)
+    #################### corpus size for seq language models ############################
+    corpus_size = {'BERT': 30522}
+    ########################################################################
+    input_dims = {'amz':512, 'enrontext':512, 'diatoms':371, 'enron':1001,'imclef07a': 80, 'imclef07d': 80,'cellcycle':77, 'church':27, 'derisi':63, 'eisen':79, 'expr':561, 'gasch1':173, 'gasch2':52, 'hom':47034, 'seq':529, 'spo':86}
     output_dims_FUN = {'cellcycle':499, 'church':499, 'derisi':499, 'eisen':461, 'expr':499, 'gasch1':499, 'gasch2':499, 'hom':499, 'seq':499, 'spo':499}
     output_dims_GO = {'cellcycle':4122, 'church':4122, 'derisi':4116, 'eisen':3570, 'expr':4128, 'gasch1':4122, 'gasch2':4128, 'hom':4128, 'seq':4130, 'spo':4116}
     output_dims_others = {'amz':554, 'enrontext':56, 'diatoms':398,'enron':56, 'imclef07a': 96, 'imclef07d': 46, 'reuters':102}
@@ -215,7 +169,7 @@ def main():
         model = ConstrainedFFNNModel(input_dims[data], args.hidden_dim, output_dims[ontology][data]+num_to_skip, hyperparams, R)
     elif 'transformer' in args.model:
         ############################# Transformer ###########################################
-        input_size = input_dims[data]
+        input_size = corpus_size['BERT']
         output_size = output_dims[ontology][data]+num_to_skip
         hidden_size = args.hidden_dim
         num_layers = hyperparams['num_layers']
@@ -271,7 +225,7 @@ def main():
 
             if 'fc' in args.model or ('lstm' in args.model):
                 ########################### FC #############################################
-                loss = criterion(train_output[:, train.to_eval], labels[:, train.to_eval])
+                loss = criterion(train_output[:, train.to_eval], labels[:, train.to_eval].double())
             elif 'transformer' in args.model:
                 ########################### Transformer #############################################
                 loss = criterion(train_output[:, train.to_eval], labels[:, train.to_eval].double())
