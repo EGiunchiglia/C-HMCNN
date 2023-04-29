@@ -1,6 +1,11 @@
 import os
 
 datasets = {
+    'enrontext_others': (
+        False,
+        os.environ['DATA_FOLDER'] + 'HMC_data/others/enron_text_others_train.arff',
+        os.environ['DATA_FOLDER'] + 'HMC_data/others/enron_text_others_test.arff'
+    ),
     'amz_others': (
         False,
         os.environ['DATA_FOLDER'] + 'HMC_data/others/amz_review_others.arff',

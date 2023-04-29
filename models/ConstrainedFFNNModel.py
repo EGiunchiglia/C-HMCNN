@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from train import get_constr_out
+# from train import get_constr_out
 
 
 class ConstrainedFFNNModel(nn.Module):
@@ -34,10 +34,24 @@ class ConstrainedFFNNModel(nn.Module):
             if i == self.nb_layers-1:
                 x = self.sigmoid(self.fc[i](x))
             else:
+                import pdb
+                pdb.set_trace()
                 x = self.f(self.fc[i](x))
                 x = self.drop(x)
+        import pdb
+        pdb.set_trace()
         if self.training:
             constrained_out = x
         else:
             constrained_out = get_constr_out(x, self.R)
         return constrained_out
+
+
+def get_constr_out(x, R):
+    """ Given the output of the neural network x returns the output of MCM given the hierarchy constraint expressed in the matrix R """
+    c_out = x.double()
+    c_out = c_out.unsqueeze(1)
+    c_out = c_out.expand(len(x), R.shape[1], R.shape[1])
+    R_batch = R.expand(len(x), R.shape[1], R.shape[1])
+    final_out, _ = torch.max(R_batch*c_out.double(), dim=2)
+    return final_out
