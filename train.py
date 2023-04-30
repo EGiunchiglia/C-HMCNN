@@ -23,6 +23,7 @@ from sklearn.metrics import f1_score, average_precision_score, precision_recall_
 
 from models.Transformer import TransformerModel
 from models.ConstrainedFFNNModel import ConstrainedFFNNModel, get_constr_out
+from models.RNN import LSTMModel
 
 # def get_constr_out(x, R):
 #     """ Given the output of the neural network x returns the output of MCM given the hierarchy constraint expressed in the matrix R """
@@ -222,6 +223,12 @@ def main():
         dropout = hyperparams['dropout']
         model = TransformerModel(input_size, output_size, hidden_size, num_layers, num_heads, dropout, R)
         ########################################################################
+    elif 'lstm' in args.model:
+        input_size = input_dims[data]
+        output_size = output_dims[ontology][data]+num_to_skip
+        hidden_size = args.hidden_dim
+        num_layers = hyperparams['num_layers']
+        model = LSTMModel(input_size, output_size, hidden_size, num_layers, R)
 
     model.to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr, weight_decay=args.weight_decay) 
@@ -243,13 +250,14 @@ def main():
         train_score = 0
 
         for i, (x, labels) in enumerate(train_loader):
-
+            # import pdb
+            # pdb.set_trace()
             x = x.to(device)
             labels = labels.to(device)
 
             # Clear gradients w.r.t. parameters
             optimizer.zero_grad()
-            if 'fc' in args.model:
+            if 'fc' in args.model or ('lstm' in args.model):
                 ########################### FC #############################################
                 output = model(x.float())
             elif 'transformer' in args.model:
@@ -260,12 +268,14 @@ def main():
             train_output = labels * output.double()
             train_output = get_constr_out(train_output, R)
             train_output = (1-labels) * constr_output.double() + labels * train_output
-            if 'fc' in args.model:
+
+            if 'fc' in args.model or ('lstm' in args.model):
                 ########################### FC #############################################
                 loss = criterion(train_output[:, train.to_eval], labels[:, train.to_eval])
             elif 'transformer' in args.model:
                 ########################### Transformer #############################################
                 loss = criterion(train_output[:, train.to_eval], labels[:, train.to_eval].double())
+            
             predicted = constr_output.data > 0.5
             # Total number of labels
             total_train += labels.size(0) * labels.size(1)
@@ -285,7 +295,7 @@ def main():
         for i, (x,y) in enumerate(val_loader):
             x = x.to(device)
             y = y.to(device)
-            if 'fc' in args.model:
+            if ('fc' in args.model) or ('lstm' in args.model):
                 ######################## fc #############################
                 constrained_output = model(x.float())
             elif 'transformer' in args.model:
