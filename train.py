@@ -241,11 +241,7 @@ def main():
             elif 'transformer' in args.model:
                 ########################### Transformer #############################################
                 loss = criterion(train_output[:, train.to_eval], labels[:, train.to_eval].double())
-<<<<<<< HEAD
-            
-=======
             ############ accuracy is thresholded at 0.5 ###############
->>>>>>> 8c29c7a (Added visualization methods for accuracy, loss and score;)
             predicted = constr_output.data > 0.5
             # Total number of labels
             total_train += labels.size(0) * labels.size(1)
@@ -304,7 +300,7 @@ def main():
         train_score_list.append(train_score)
         val_score_list.append(score)
         ################################################################
-        floss = open('logs/'+str(dataset_name)+'/measures_batch_size_'+str(args.batch_size)+'_lr_'+str(args.lr)+'_weight_decay_'+str(args.weight_decay)+'_seed_'+str(args.seed)+'_num_layers_'+str(args.num_layers)+'._hidden_dim_'+str(args.hidden_dim)+'_dropout_'+str(args.dropout)+'_'+args.non_lin, 'a')
+        floss = open('logs/'+'/'+str(dataset_name)+'/' + args.model + '_measures_batch_size_'+str(args.batch_size)+'_lr_'+str(args.lr)+'_weight_decay_'+str(args.weight_decay)+'_seed_'+str(args.seed)+'_num_layers_'+str(args.num_layers)+'._hidden_dim_'+str(args.hidden_dim)+'_dropout_'+str(args.dropout)+'_'+args.non_lin, 'a')
         floss.write('\nEpoch: {} - Loss: {:.4f}, Accuracy train: {:.5f}, Accuracy: {:.5f}, Precision score: ({:.5f})\n'.format(epoch,
                     loss, float(correct_train)/float(total_train), float(correct)/float(total), score))
         floss.close()
