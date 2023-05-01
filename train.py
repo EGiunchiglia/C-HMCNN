@@ -120,7 +120,7 @@ def main():
             R[i, descendants] = 1
 
     R = torch.tensor(R)
-    #Transpose to get the ancestors for each node 
+    # Transpose to get the ancestors for each node
     R = R.transpose(1, 0)
     R = R.unsqueeze(0).to(device)
 
@@ -141,21 +141,21 @@ def main():
         scaler = preprocessing.StandardScaler().fit(np.concatenate((train.X, val.X)))
         imp_mean = SimpleImputer(missing_values=np.nan, strategy='mean').fit(np.concatenate((train.X, val.X)))
         val.X, val.Y = torch.tensor(scaler.transform(imp_mean.transform(val.X))).to(device), torch.tensor(val.Y).to(device)
-        train.X, train.Y = torch.tensor(scaler.transform(imp_mean.transform(train.X))).to(device), torch.tensor(train.Y).to(device)        
+        train.X, train.Y = torch.tensor(scaler.transform(imp_mean.transform(train.X))).to(device), torch.tensor(train.Y).to(device)     
 
-    # Create loaders 
+    # Create loaders
     train_dataset = [(x, y) for (x, y) in zip(train.X, train.Y)]
     if ('others' in args.dataset):
         val_dataset = [(x, y) for (x, y) in zip(valX, valY)]
     else:
         val_dataset = [(x, y) for (x, y) in zip(val.X, val.Y)]
 
-    train_loader = torch.utils.data.DataLoader(dataset=train_dataset, 
-                                            batch_size=args.batch_size, 
+    train_loader = torch.utils.data.DataLoader(dataset=train_dataset,
+                                            batch_size=args.batch_size,
                                             shuffle=True)
 
-    val_loader = torch.utils.data.DataLoader(dataset=val_dataset, 
-                                            batch_size=args.batch_size, 
+    val_loader = torch.utils.data.DataLoader(dataset=val_dataset,
+                                            batch_size=args.batch_size,
                                             shuffle=False)
 
 
@@ -186,7 +186,7 @@ def main():
         model = LSTMModel(input_size, output_size, hidden_size, num_layers, R)
 
     model.to(device)
-    optimizer = torch.optim.Adam(model.parameters(), lr=args.lr, weight_decay=args.weight_decay) 
+    optimizer = torch.optim.Adam(model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
     criterion = nn.BCELoss()
 
     # Set patience 
@@ -214,7 +214,7 @@ def main():
         model.train()
 
         train_score = 0
-
+        total_train_loss = 0.
         for i, (x, labels) in enumerate(train_loader):
             # import pdb
             # pdb.set_trace()
@@ -230,24 +230,40 @@ def main():
                 ########################### Transformer #############################################
                 output = model(x)
                 ########################################################################
+
+            # MCLoss
+            # Paper page 4-(3) - MCM_A
             constr_output = get_constr_out(output, R)
+            # Paper page 4 - y_B*h_B
             train_output = labels * output.double()
+            # Paper page 4 - max(y_B*h_B)
             train_output = get_constr_out(train_output, R)
+            # Paper page 4 - (1-y_A) * MCM_A + y_A * max(y_B*h_B)
             train_output = (1-labels) * constr_output.double() + labels * train_output
 
-            if 'fc' in args.model or ('lstm' in args.model):
+            if 'fc' in args.model:
+                # BCE_loss is binary cross entropy loss
+                # BCE_loss = -(1/n) * sum[label[i] * log(output[i]) + (1-label[i]) * log(1-output[i])]
+                # ref: https://juejin.cn/s/binary%20cross%20entropy
+                # To inject our train_output into BCE, we get the following equation:
+                # MCLoss = BCE_loss(train_output, labels)
+                #        = -(1/n) * sum[label[i] * log((1-y_A) * MCM_A + y_A * max(y_B*h_B))
+                #           + (1-label[i]) * log(1- ((1-y_A) * MCM_A + y_A * max(y_B*h_B)))]
+                #        = ?
                 ########################### FC #############################################
                 loss = criterion(train_output[:, train.to_eval], labels[:, train.to_eval].double())
             elif 'transformer' in args.model:
                 ########################### Transformer #############################################
                 loss = criterion(train_output[:, train.to_eval], labels[:, train.to_eval].double())
+            ########################### Loss Viz #########################################
+            total_train_loss += loss.item()
             ############ accuracy is thresholded at 0.5 ###############
             predicted = constr_output.data > 0.5
             # Total number of labels
             total_train += labels.size(0) * labels.size(1)
             # Total correct predictions
             correct_train += (predicted == labels.byte()).sum()
-  
+
             # Getting gradients w.r.t. parameters
             loss.backward()
             # Updating parameters
@@ -255,10 +271,16 @@ def main():
 
         model.eval()
         constr_output = constr_output.to('cpu')
+
         labels = labels.to('cpu')
         train_score = average_precision_score(labels[:, train.to_eval], constr_output.data[:, train.to_eval], average='micro')
+        ########## Loss Viz ##############
+        avg_train_loss = total_train_loss / len(train_loader)
+        ##################################
 
-        for i, (x,y) in enumerate(val_loader):
+
+        total_val_loss = 0.
+        for i, (x, y) in enumerate(val_loader):
             x = x.to(device)
             y = y.to(device)
             if ('fc' in args.model) or ('lstm' in args.model):
@@ -268,6 +290,20 @@ def main():
                 ######################## transformer #############################
                 constrained_output = model(x)
 
+            ############## BCE Loss for Viz ##############
+            # MCLoss
+            # Paper page 4-(3) - MCM_A
+            constr_output = get_constr_out(constrained_output, R)
+            # Paper page 4 - y_B*h_B
+            val_output = y * constrained_output.double()
+            # Paper page 4 - max(y_B*h_B)
+            val_output = get_constr_out(val_output, R)
+            # Paper page 4 - (1-y_A) * MCM_A + y_A * max(y_B*h_B)
+            val_output = (1-y) * constr_output.double() + y * val_output
+
+            loss = criterion(val_output[:, train.to_eval], y[:, train.to_eval].double())
+            total_val_loss += loss.item()
+            ################################################
             predicted = constrained_output.data > 0.5
             # Total number of labels
             total = y.size(0) * y.size(1)
@@ -286,7 +322,9 @@ def main():
                 y_val = torch.cat((y_val, y), dim=0)
 
         score = average_precision_score(y_val[:, train.to_eval], constr_val.data[:, train.to_eval], average='micro')
-
+        #################### for val loss viz ##########################
+        avg_val_loss = total_val_loss / len(val_loader)
+        ################################################################
         if score >= max_score:
             patience = max_patience
             max_score = score
@@ -299,6 +337,14 @@ def main():
 
         train_score_list.append(train_score)
         val_score_list.append(score)
+
+        # use total loss over all batches per epoch
+        # train_loss_list.append(total_train_loss)
+        # val_loss_list.append(total_val_loss)
+
+        # use average loss over number of batches per epoch
+        train_loss_list.append(avg_train_loss)
+        val_loss_list.append(avg_val_loss)
         ################################################################
         floss = open('logs/'+'/'+str(dataset_name)+'/' + args.model + '_measures_batch_size_'+str(args.batch_size)+'_lr_'+str(args.lr)+'_weight_decay_'+str(args.weight_decay)+'_seed_'+str(args.seed)+'_num_layers_'+str(args.num_layers)+'._hidden_dim_'+str(args.hidden_dim)+'_dropout_'+str(args.dropout)+'_'+args.non_lin, 'a')
         floss.write('\nEpoch: {} - Loss: {:.4f}, Accuracy train: {:.5f}, Accuracy: {:.5f}, Precision score: ({:.5f})\n'.format(epoch,
@@ -310,6 +356,7 @@ def main():
     ############################## Visualization #############################
     draw_loss_acc(args.model, args.dataset, train_acc_list, val_acc_list, 'Accuracy')
     draw_loss_acc(args.model, args.dataset, train_score_list, val_score_list, 'Score')
+    draw_loss_acc(args.model, args.dataset, train_loss_list, val_loss_list, 'Loss')
     ################################################################
 
 if __name__ == "__main__":

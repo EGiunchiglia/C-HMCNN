@@ -12,7 +12,8 @@ def draw_loss_acc(model_name, dataset_name, train_list, validation_list, mode='L
     # 设置间隔
     data_len = len(train_list)
     x_ticks = np.arange(1, data_len+1)
-    plt.xticks(x_ticks)
+    x_ticks_labels = np.arange(1, data_len+1) if data_len <= 30 else np.arange(1, data_len+1, data_len//30)
+    plt.xticks(x_ticks_labels)
     if mode == 'Loss':
         plt.plot(x_ticks, train_list, label='Training Loss')
         plt.plot(x_ticks, validation_list, label='Validation Loss')
