@@ -23,6 +23,7 @@ import numpy
 
 from sklearn.metrics import f1_score, average_precision_score, precision_recall_curve, roc_auc_score, auc
 
+from models.RNN import LSTMModel
 
 def get_constr_out(x, R):
     """ Given the output of the neural network x returns the output of MCM given the hierarchy constraint expressed in the matrix R """
@@ -203,7 +204,9 @@ def main():
         num_to_skip = 1 
 
     # Create the model
-    model = ConstrainedFFNNModel(input_dims[data], hidden_dim, output_dims[ontology][data]+num_to_skip, hyperparams, R)
+    num_layers = 3
+    model = LSTMModel(input_dims[data], output_dims[ontology][data]+num_to_skip, hidden_dim, num_layers, R)
+    # model = ConstrainedFFNNModel(input_dims[data], hidden_dim, output_dims[ontology][data]+num_to_skip, hyperparams, R)
     model.to(device)
     print("Model on gpu", next(model.parameters()).is_cuda)
     optimizer = torch.optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)

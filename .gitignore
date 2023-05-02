@@ -5,3 +5,5 @@ results/*.csv
 logs/*/measures*
 logs/*/.txt
 *.pyc
+.ipynb_checkpoints/Untitled-checkpoint.ipynb
+HMC_data/qiyu/

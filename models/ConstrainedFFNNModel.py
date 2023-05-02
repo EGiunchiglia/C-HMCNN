@@ -30,8 +30,6 @@ class ConstrainedFFNNModel(nn.Module):
             self.f = nn.ReLU()
 
     def forward(self, x):
-        import pdb
-        pdb.set_trace()
         for i in range(self.nb_layers):
             if i == self.nb_layers-1:
                 x = self.sigmoid(self.fc[i](x))
